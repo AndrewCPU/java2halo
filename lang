@@ -1,0 +1,9 @@
+@PlayerKilledEvent(this) {
+    if(this.getKilled().getTeam() == this.getKiller().getTeam()) {
+        this.getKilled().print();
+    }
+    else{
+        this.getKilled().blockRespawns();
+        this.getKilled().setTeam(this.getKiller().getTeam());
+    }
+}

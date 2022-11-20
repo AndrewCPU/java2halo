@@ -1,0 +1,26 @@
+declare traitList: TraitList(MeleeRecoverySpeed(1.0), JumpHeight(1.15));
+declare weaponType: WeaponType.br75;
+declare weaponTrait: LoadoutWeaponOverrides(weaponType, WeaponType.sidekick);
+declare infectedTraitSet: TraitSet(weaponTrait, empty, traitList);
+
+@PlayerKilledEvent(this) {
+    if(this.killer.getTeam() == this.killed.getTeam()){
+
+    }
+    else{
+        if(this.killer.getTeam() == Team.cobra) {
+            local killingTeam: this.killer.getTeam();
+            local vector: this.killer.getFiringVector();
+            this.killed.blockRespawns();
+            this.killed.setTeam(killingTeam);
+            this.killed.applyTraitSet(infectedTraitSet, true);
+            this.killed.unblockRespawns();
+            this.killer.print();
+            this.killer.getWeapons().primary.areSameWeaponType(this.killed.getWeapons().primary);
+            foreach((Player player, Number currentIteration) in this.killed.getTeam().getPlayers()) {
+                this.killed.print();
+            }
+        }
+        else;
+    }
+}

@@ -1,0 +1,9 @@
+package net.andrewcpu.halo.nodes.nodes.variables.advanced;
+
+import net.andrewcpu.halo.type.VehicleTypeType;
+
+public class SetVehicleTypeVariable extends IVSONode<VehicleTypeType>{
+	public SetVehicleTypeVariable() {
+		super("Set Vehicle Type Variable", new VehicleTypeType("value"));
+	}
+}

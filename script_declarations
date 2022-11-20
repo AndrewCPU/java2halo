@@ -1,0 +1,198 @@
+@PlayerCrouchEvent:
+    out player: Player
+    out crouching: Bool
+
+@PlayerExitedEvent:
+    out player: Player
+    out team: Team
+
+@PlayerJoinedEvent:
+    out player: Player
+    out inProgress: Bool
+
+@PlayerKilledEvent:
+    out killed: Player
+    out killing: Player
+    out deathContext: DeathContext
+
+@PlayerMarkEvent:
+    out player: Player
+    out calloutPosition: Vector
+    out targetList: PlayerList
+
+@PlayerSpawnedEvent:
+    out player: Player
+
+@PlayerTeamChangeEvent:
+    out player: Player
+    out oldTeam: Team
+    out newTeam: Team
+
+@EquipmentPickupEvent:
+    out player: Player
+    out equipmentType: EquipmentType
+    out equipmentPosition: Vector
+
+@EquipmentUsedEvent:
+    out player: Player
+    out equipmentType: EquipmentType
+
+@GrenadePickupEvent:
+    out player: Player
+    out grenadeType: GrenadeType
+    out position: Vector
+
+@GrenadeThrowEvent:
+    out player: Player
+    out grenadeType: GrenadeType
+
+@WeaponAddedEvent:
+    out player: Player
+    out weapon: Weapon
+
+@WeaponDroppedEvent:
+    out player: Player
+    out weapon: Weapon
+
+@WeaponLowAmmoEvent:
+    out player: Player
+    out weapon: Weapon
+
+@WeaponNoAmmoEvent:
+    out player: Player
+    out weapon: Weapon
+
+@WeaponPickupEvent:
+    out player: Player
+    out weapon: Weapon
+    out position: Vector
+
+@WeaponRefillPickupEvent:
+    out player: Player
+    out weapon: Weapon
+    out position: Vector
+    out fullyPickedUp: Bool
+
+@EveryNSecondsEvent:
+    in seconds: Number
+    in initialDelay: Number
+
+@GameStartEvent:
+
+@GameplayStartEvent:
+    out round: Number
+
+@ObjectDamagedEvent:
+    in object: Object
+    out attackingObject: Object
+    out damageAmount: Number
+
+@ObjectDestroyedEvent:
+    in object: Object
+
+@ObjectEnteredAreaEvent:
+    in areaMonitor: AreaMonitor
+    out object: Object
+
+@ObjectExitedAreaEvent:
+    in areaMonitor: AreaMonitor
+    out object: Object
+
+@ObjectSpawnedEvent:
+    in object: Object
+
+@RoundEndEvent:
+    out round: Number
+
+@RoundStartEvent:
+    out round: Number
+
+@VehicleEnteredEvent:
+    out player: Player
+    out vehicle: Vehicle
+
+@VehicleExitedEvent:
+    out player: Player
+    out vehicle: Vehicle
+
+@VehicleHijackedEvent:
+    out player: Player
+    out vehicle: Vehicle
+
+@VehicleOverturnedEvent:
+    out player: Player
+    out vehicle: Vehicle
+
+
+
+//
+
+#AdjustPersonalScore
+
+
+
+//
+
+
+
+
+#Game:
+    get numberOfTeams(): Number
+    get numberOfPlayers(): Number
+    get randomPlayer(): Player
+
+#Vector:
+    in x: number
+    in y: number
+    in z: number
+    out: Vector
+
+#Player:
+    static equals(player: Player): bool
+
+    get team(): Team
+    set team(teamValue: Team):
+    get airborne(): Bool
+
+    get camouflaged(): Bool
+    set camouflaged(seconds: Number):
+
+    get crouching(): Bool
+    get detected(): Bool
+    get detectedByTeam(teamValue: Team): Bool
+    get grappling(): Bool
+    get knockback(): Bool
+    get lunging(): Bool
+
+    get markOverridden(): Bool
+    set markOverridden(overridden: Bool):
+
+    get overshield(): Bool
+    get isPlayer(): Bool
+    get zoomed(): Bool
+    get aimingVector(): Vector
+
+    get ffaAllegiance(): team
+    set ffaAllegiance(allegiance: team):
+
+    get respawnPenalty(): number
+    set respawnPenalty(seconds: number):
+
+    #teleportPlayer(position: vector):
+    #blockRespawns():
+    #unblockRespawns():
+
+
+#Team:
+    static eagle(): Team
+    static cobra(): Team
+    get players(): PlayerList
+
+#audio:
+    #play3DAudioForAllPlayers(positionValue: vector):
+    #play3DAudioForOpposingTeams(teamValue: team, positionValue: vector):
+    #play3DAudioForTeam():
+    #registerAudioZone():
+    #setObject3DAudioLoop():
+    #stopObject3DAudioLoop():
+    #unregisterAudioZone():

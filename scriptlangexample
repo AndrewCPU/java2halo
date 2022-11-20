@@ -1,0 +1,18 @@
+declare variable startingPlayer: Player = (empty, global);
+
+@PlayerSpawnEvent(player: Player):
+    player.giveWeapon();
+
+@PlayerKilledEvent(killedPlayer: Player, killingPlayer: Player, deathContext: DeathContext):
+    if(killedPlayer.team == Team.eagle && killingPlayer.team == Team.cobra):
+        infectPlayer(killedPlayer);
+        killedPlayer.respawnPenalty = 10;
+        foreach((player, iteration) in killedPlayer.team.players):
+            #execute per player
+        #onComplete afterwards
+
+    else:
+        # if false
+
+declare event infectPlayer(player: Player, number: Number, objectList: ObjectList):
+    player.team = Team.cobra;
