@@ -9,21 +9,21 @@ import java.util.List;
 public class StructuresToNodes {
 	public static void structuresToNodes(List list) {
 		// we need to invert almost ALL function calls here.
+		System.out.println(list);
 		/**
 		 *  onPlayerKilled(killed, killing, deathContext):
 		 *  (
 		 *      branch(
-		 *          compareTeams(
+		 *          (compareTeams(
 		 *              getPlayerTeam(killed),
 		 *              getPlayerTeam(killer)
-		 *          ),
+		 *          )),
 		 *          (ifTrue print(killed))
 		 *          (ifFalse (
 		 *              blockPlayerRespawns(killed)
 		 *              setPlayerTeam(killed, getPlayerTeam(killer))
 		 *          ))
 		 *      )
-		 *
 		 *  )
 		 *
 		 *

@@ -9,4 +9,9 @@ public class Branch extends InputOnlyNode {
 	public Branch() {
 		super("Branch", new DataType[]{new BooleanType("condition")}, new DataType[]{new ExecutionThreadType("ifTrue"), new ExecutionThreadType("ifFalse")});
 	}
+
+	@Override
+	public boolean canCarryLogic() {
+		return true;
+	}
 }
