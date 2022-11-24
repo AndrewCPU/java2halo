@@ -4,6 +4,6 @@ import net.andrewcpu.halo.type.TeamType;
 
 public class DeclareTeamVariable extends IISNode<TeamType> {
 	public DeclareTeamVariable() {
-		super("Declare Team Variable ", new TeamType("initialValue"));
+		super("Declare Team Variable.json ", new TeamType("initialValue"));
 	}
 }

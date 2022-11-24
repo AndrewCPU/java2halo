@@ -1,0 +1,229 @@
+{
+  "add": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "VectorType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "VectorType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VectorType"
+        },
+        {
+          "_ref": "$1",
+          "type": "VectorType"
+        }
+      ],
+      "type": "AddVectors",
+      "value": "$2"
+    },
+    "returnType": "VectorType"
+  },
+  "crossProduct": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "VectorType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "VectorType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VectorType"
+        },
+        {
+          "_ref": "$1",
+          "type": "VectorType"
+        }
+      ],
+      "type": "VectorCrossProduct",
+      "value": "$2"
+    },
+    "returnType": "VectorType"
+  },
+  "print": {
+    "input": [],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VectorType"
+        }
+      ],
+      "type": "PrintVector3ToKillfeed"
+    },
+    "returnType": "void"
+  },
+  "normalize": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "VectorType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VectorType"
+        }
+      ],
+      "type": "NormalizeVector",
+      "value": "$1"
+    },
+    "returnType": "VectorType"
+  },
+  "subtract": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "VectorType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "VectorType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VectorType"
+        },
+        {
+          "_ref": "$1",
+          "type": "VectorType"
+        }
+      ],
+      "type": "SubtractVectors",
+      "value": "$2"
+    },
+    "returnType": "VectorType"
+  },
+  "getLength": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VectorType"
+        }
+      ],
+      "type": "GetVectorLength",
+      "value": "$1"
+    },
+    "returnType": "NumberType"
+  },
+  "scale": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "NumberType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "VectorType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VectorType"
+        },
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "type": "ScaleVector",
+      "value": "$2"
+    },
+    "returnType": "VectorType"
+  },
+  "dotProduct": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "VectorType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "NumberType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VectorType"
+        },
+        {
+          "_ref": "$1",
+          "type": "VectorType"
+        }
+      ],
+      "type": "VectorDotProduct",
+      "value": "$2"
+    },
+    "returnType": "NumberType"
+  },
+  "getAxisLength": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        },
+        {
+          "_ref": "$2",
+          "type": "NumberType"
+        },
+        {
+          "_ref": "$3",
+          "type": "NumberType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VectorType"
+        }
+      ],
+      "type": "GetVectorAxisValue",
+      "value": "$3"
+    },
+    "returnType": "NumberType"
+  }
+}

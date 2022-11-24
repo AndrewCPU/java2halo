@@ -1,0 +1,175 @@
+{
+  "equal": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "VehicleType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$3",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VehicleType"
+        },
+        {
+          "_ref": "$1",
+          "type": "VehicleType"
+        }
+      ],
+      "type": "AreSameVehicleType",
+      "value": "$3"
+    },
+    "returnType": "BooleanType"
+  },
+  "getOccupants": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "PlayersType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VehicleType"
+        }
+      ],
+      "type": "GetVehicleOccupants",
+      "value": "$1"
+    },
+    "returnType": "PlayersType"
+  },
+  "getType": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "VehicleTypeType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VehicleType"
+        }
+      ],
+      "type": "GetVehicleType",
+      "value": "$1"
+    },
+    "returnType": "VehicleTypeType"
+  },
+  "isEnterable": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VehicleType"
+        }
+      ],
+      "type": "GetVehicleEnterableByPlayer",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  },
+  "getSpeed": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetSquaredVehicleSpeed",
+      "value": "$1"
+    },
+    "returnType": "NumberType"
+  },
+  "isOverturned": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VehicleType"
+        }
+      ],
+      "type": "GetIsOverturned",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  },
+  "getDriver": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "PlayerType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VehicleType"
+        }
+      ],
+      "type": "GetVehicleDriver",
+      "value": "$1"
+    },
+    "returnType": "PlayerType"
+  },
+  "getGunner": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "PlayerType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VehicleType"
+        }
+      ],
+      "type": "GetVehicleGunner",
+      "value": "$1"
+    },
+    "returnType": "PlayerType"
+  }
+}

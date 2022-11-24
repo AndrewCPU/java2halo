@@ -6,6 +6,6 @@ import net.andrewcpu.halo.type.TeamType;
 
 public class TeamVariable extends DataNode {
 	public TeamVariable() {
-		super("Team Variable", new DataType[]{new TeamType("value")}, new DataType[]{new TeamType("value")});
+		super("Team Variable.json", new DataType[]{new TeamType("value")}, new DataType[]{new TeamType("value")});
 	}
 }

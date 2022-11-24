@@ -4,6 +4,6 @@ import net.andrewcpu.halo.type.BooleanType;
 
 public class DeclareBooleanVariable extends IISNode<BooleanType> {
 	public DeclareBooleanVariable() {
-		super("Declare Boolean Variable ", new BooleanType("initialValue"));
+		super("Declare Boolean Variable.json ", new BooleanType("initialValue"));
 	}
 }

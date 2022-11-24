@@ -6,6 +6,6 @@ import net.andrewcpu.halo.type.VehicleTypeType;
 
 public class VehicleTypeVariable extends DataNode {
 	public VehicleTypeVariable() {
-		super("Vehicle Type Variable", new DataType[]{new VehicleTypeType("value")}, new DataType[]{new VehicleTypeType("value")});
+		super("Vehicle Type Variable.json", new DataType[]{new VehicleTypeType("value")}, new DataType[]{new VehicleTypeType("value")});
 	}
 }

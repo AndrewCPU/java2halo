@@ -4,6 +4,6 @@ import net.andrewcpu.halo.type.EquipmentTypeType;
 
 public class DeclareEquipmentTypeVariable extends IISNode<EquipmentTypeType> {
 	public DeclareEquipmentTypeVariable() {
-		super("Declare Equipment Type Variable ", new EquipmentTypeType("initialValue"));
+		super("Declare Equipment Type Variable.json ", new EquipmentTypeType("initialValue"));
 	}
 }

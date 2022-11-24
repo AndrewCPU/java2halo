@@ -6,6 +6,6 @@ import net.andrewcpu.halo.type.DataType;
 
 public class BooleanVariable extends DataNode {
 	public BooleanVariable() {
-		super("Boolean Variable", new DataType[]{new BooleanType("value")}, new DataType[]{new BooleanType("value")});
+		super("Boolean Variable.json", new DataType[]{new BooleanType("value")}, new DataType[]{new BooleanType("value")});
 	}
 }

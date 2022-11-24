@@ -8,6 +8,6 @@ import net.andrewcpu.halo.type.WeaponTypeType;
 
 public class WeaponTypeCombinationVariable extends DataNode {
 	public WeaponTypeCombinationVariable() {
-		super("Weapon Type Combination Variable", new DataType[]{new WeaponType("baseWeapon"), new WeaponConfigurationType("configuration")}, new DataType[]{new WeaponTypeType("weaponType")});
+		super("Weapon Type Combination Variable.json", new DataType[]{new WeaponType("baseWeapon"), new WeaponConfigurationType("configuration")}, new DataType[]{new WeaponTypeType("weaponType")});
 	}
 }

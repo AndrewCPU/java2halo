@@ -24,6 +24,10 @@ public class EventDeclarationStructure extends ListStructure{
 		return parameters;
 	}
 
+	public void setParameters(ItemList parameters) {
+		this.parameters = parameters;
+	}
+
 	public BlockStructure getBody() {
 		return  children;
 	}
@@ -37,5 +41,14 @@ public class EventDeclarationStructure extends ListStructure{
 	public void setChildren(List list) {
 		this.parameters = (ItemList) list.get(0);
 		this.children = (BlockStructure) list.get(1);
+	}
+
+	@Override
+	public String toString() {
+		return "EventDeclarationStructure[" +
+				"eventDeclaration=" + eventDeclaration +
+				", parameters=" + parameters +
+				", children=" + children +
+				']';
 	}
 }

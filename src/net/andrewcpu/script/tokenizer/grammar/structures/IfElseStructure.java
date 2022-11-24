@@ -36,4 +36,13 @@ public class IfElseStructure extends ListStructure{
 		this.ifTrue = (BlockStructure) list.get(1);
 		this.ifFalse = (BlockStructure) list.get(2);
 	}
+
+	@Override
+	public String toString() {
+		return "IfElseStructure{" +
+				"ifConditions=" + ifConditions +
+				", ifTrue=" + ifTrue +
+				", ifFalse=" + ifFalse +
+				'}';
+	}
 }

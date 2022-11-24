@@ -85,7 +85,7 @@ public class LanguageConstant {
 			"UIMessage",
 			"Vector",
 			"Vehicle",
-			"VehicleType",
+			"VehicleType.json",
 			"WeaponAdditionMethod",
 			"WeaponConfigurationType",
 			"Weapon",

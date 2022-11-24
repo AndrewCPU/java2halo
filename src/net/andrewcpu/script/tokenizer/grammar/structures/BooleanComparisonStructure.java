@@ -18,13 +18,46 @@ public class BooleanComparisonStructure extends ListStructure {
 
 	@Override
 	public List getChildren() {
-		return List.of(left,comparisonOperator, right);
+		return List.of(comparisonOperator,left, right);
 	}
 
 	@Override
 	public void setChildren(List list) {
-		this.left = list.get(0);
-		this.comparisonOperator = (Token)list.get(1);
+		this.left = list.get(1);
+		this.comparisonOperator = (Token)list.get(0);
 		this.right = list.get(2);
+	}
+
+	@Override
+	public String toString() {
+		return "BooleanComparisonStructure[" +
+				"comparisonOperator=" + comparisonOperator +
+				", left=" + left +
+				", right=" + right +
+				']';
+	}
+
+	public Token getComparisonOperator() {
+		return comparisonOperator;
+	}
+
+	public void setComparisonOperator(Token comparisonOperator) {
+		this.comparisonOperator = comparisonOperator;
+	}
+
+	public Object getLeft() {
+		return left;
+	}
+
+	public void setLeft(Object left) {
+		this.left = left;
+	}
+
+	public Object getRight() {
+		return right;
+	}
+
+	public void setRight(Object right) {
+		this.right = right;
 	}
 }

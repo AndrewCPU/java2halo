@@ -1,0 +1,113 @@
+{
+  "equal": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "NumberType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$3",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$4",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "NumberType"
+        },
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "type": "Compare",
+      "value": "$2"
+    },
+    "returnType": "BooleanType"
+  },
+  "gt": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "NumberType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$3",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$4",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "NumberType"
+        },
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "type": "Compare",
+      "value": "$3"
+    },
+    "returnType": "BooleanType"
+  },
+  "lt": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "NumberType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$3",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$4",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "NumberType"
+        },
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "type": "Compare",
+      "value": "$4"
+    },
+    "returnType": "BooleanType"
+  }
+}

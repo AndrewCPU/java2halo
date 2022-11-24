@@ -1,7 +1,7 @@
 package net.andrewcpu.script.tokenizer;
 
 public enum TokenType {
-	GLOBAL_DECLARATION("declare"),
+	GLOBAL_DECLARATION("global|bind"),
 	LOCAL_DECLARATION("local"),
 	EMPTY("empty"),
 //	PARAMETER,
@@ -10,10 +10,12 @@ public enum TokenType {
 	FOREACH("foreach"),
 	NUMBER_ASSIGNMENT("\\d+(\\.\\d+)?"),
 	VALUE_ASSIGNMENT("[:]"),
+	ASSIGNMENT_OPERATOR("="),
 	STATEMENT_END("[;]"),
 	EVENT_DECLARATION("@[\\w]+"),
 	IN("in"),
-	BOOLEAN_OPERATOR("==|>|<|&&|\\|\\|"),
+	BOOLEAN_OPERATOR("==|>|<"),
+	BOOLEAN_COMPARISON("&&|\\|\\|"),
 	BOOLEAN_VALUE("true|false"),
 	OPEN_PARENTHESIS("[(]"),
 	CLOSE_PARENTHESIS("[)]"),

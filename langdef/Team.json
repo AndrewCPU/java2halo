@@ -1,0 +1,133 @@
+{
+  "equal": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "TeamType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "TeamType"
+        },
+        {
+          "_ref": "$1",
+          "type": "TeamType"
+        }
+      ],
+      "type": "CompareTeams",
+      "value": "$2"
+    },
+    "returnType": "BooleanType"
+  },
+  "adjustPoints": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "NumberType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "TeamType"
+        },
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "type": "AdjustTeamPoints"
+    },
+    "returnType": "void"
+  },
+  "print": {
+    "input": [],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "TeamType"
+        }
+      ],
+      "type": "PrintTeamToKillfeed"
+    },
+    "returnType": "void"
+  },
+  "getPoints": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        },
+        {
+          "_ref": "$2",
+          "type": "NumberType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "TeamType"
+        }
+      ],
+      "type": "GetTeamPoints",
+      "value": "$2"
+    },
+    "returnType": "NumberType"
+  },
+  "getAllSpawnPoints": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "ObjectsType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "TeamType"
+        }
+      ],
+      "type": "GetAllSpawnPointsForTeam",
+      "value": "$1"
+    },
+    "returnType": "ObjectsType"
+  },
+  "getPlayers": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "PlayersType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "TeamType"
+        }
+      ],
+      "type": "GetAllPlayersOnTeam",
+      "value": "$1"
+    },
+    "returnType": "PlayersType"
+  },
+  "constants": ["eagle","cobra","hades","valkyrie","rampart","cutlass","valor","hazard"]
+}

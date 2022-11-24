@@ -4,6 +4,6 @@ import net.andrewcpu.halo.type.GrenadeTypeType;
 
 public class SetGrenadeTypeVariable extends IVSONode<GrenadeTypeType>{
 	public SetGrenadeTypeVariable() {
-		super("Set Grenade Type Variable", new GrenadeTypeType("value"));
+		super("Set Grenade Type Variable.json", new GrenadeTypeType("value"));
 	}
 }

@@ -1,0 +1,55 @@
+{
+  "equal": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "EquipmentType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "EquipmentType"
+        },
+        {
+          "_ref": "$1",
+          "type": "EquipmentType"
+        }
+      ],
+      "type": "AreSameEquipmentType",
+      "value": "$2"
+    },
+    "returnType": "BooleanType"
+  },
+  "getType": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "EquipmentTypeType"
+        },
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "EquipmentType"
+        }
+      ],
+      "type": "GetEquipmentType",
+      "value": "$2"
+    },
+    "returnType": "EquipmentTypeType"
+  }
+}

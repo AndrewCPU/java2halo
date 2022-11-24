@@ -4,6 +4,6 @@ import net.andrewcpu.halo.type.EquipmentTypeType;
 
 public class SetEquipmentTypeVariable extends IVSONode<EquipmentTypeType>{
 	public SetEquipmentTypeVariable() {
-		super("Set Equipment Type Variable", new EquipmentTypeType("value"));
+		super("Set Equipment Type Variable.json", new EquipmentTypeType("value"));
 	}
 }

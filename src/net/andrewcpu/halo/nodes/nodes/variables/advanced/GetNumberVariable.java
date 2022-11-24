@@ -4,6 +4,6 @@ import net.andrewcpu.halo.type.NumberType;
 
 public class GetNumberVariable extends ISONode<NumberType> {
 	public GetNumberVariable() {
-		super("Get Number Variable", new NumberType("value"));
+		super("Get Number Variable.json", new NumberType("value"));
 	}
 }

@@ -1,0 +1,32 @@
+{
+  "equal": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "EquipmentTypeType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "EquipmentTypeType"
+        },
+        {
+          "_ref": "$1",
+          "type": "EquipmentTypeType"
+        }
+      ],
+      "type": "CompareEquipmentTypes",
+      "value": "$2"
+    },
+    "returnType": "BooleanType"
+  },
+  "constants": ["active_camo","drop_wall","grappleshot","overshield","repulsor","threat_sensor","thruster"]
+}

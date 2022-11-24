@@ -4,6 +4,6 @@ import net.andrewcpu.halo.type.ObjectType;
 
 public class DeclareObjectVariable extends IISNode<ObjectType> {
 	public DeclareObjectVariable() {
-		super("Declare Object Variable", new ObjectType("initialValue"));
+		super("Declare Object Variable.json", new ObjectType("initialValue"));
 	}
 }

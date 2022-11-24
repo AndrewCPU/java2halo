@@ -6,6 +6,6 @@ import net.andrewcpu.halo.type.GrenadeTypeType;
 
 public class GrenadeTypeVariable extends DataNode {
 	public GrenadeTypeVariable() {
-		super("Grenade Type Variable", new DataType[]{new GrenadeTypeType("value")}, new DataType[]{new GrenadeTypeType("value")});
+		super("Grenade Type Variable.json", new DataType[]{new GrenadeTypeType("value")}, new DataType[]{new GrenadeTypeType("value")});
 	}
 }

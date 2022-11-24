@@ -1,5 +1,6 @@
 package net.andrewcpu.script.tokenizer.grammar.structures;
 
+import net.andrewcpu.script.tokenizer.Token;
 import net.andrewcpu.script.tokenizer.TokenType;
 import net.andrewcpu.script.tokenizer.grammar.GrammarBlock;
 import net.andrewcpu.script.tokenizer.grammar.GrammarBlockType;
@@ -16,9 +17,10 @@ public class ItemList extends GrammarBlock {
 		List<List<Object>> splitting = new ArrayList<>();
 		List<Object> current = new ArrayList<>();
 		for(Object child : getChildren()) {
-			if(child == tokenType) {
+			if(child instanceof Token token && token.getType() == tokenType) {
 				splitting.add(current);
 				current = new ArrayList<>();
+				continue;
 			}
 			current.add(child);
 		}

@@ -4,6 +4,6 @@ import net.andrewcpu.halo.type.UIMessageType;
 
 public class DeclareUIMessageVariable extends IISNode<UIMessageType> {
 	public DeclareUIMessageVariable() {
-		super("Declare UI Message Variable ", new UIMessageType("initialValue"));
+		super("Declare UI Message Variable.json ", new UIMessageType("initialValue"));
 	}
 }

@@ -6,6 +6,6 @@ import net.andrewcpu.halo.type.EquipmentTypeType;
 
 public class EquipmentTypeVariable extends DataNode {
 	public EquipmentTypeVariable(){
-		super("Equipment Type Variable", new DataType[]{new EquipmentTypeType("value")}, new DataType[]{new EquipmentTypeType("value")});
+		super("Equipment Type Variable.json", new DataType[]{new EquipmentTypeType("value")}, new DataType[]{new EquipmentTypeType("value")});
 	}
 }

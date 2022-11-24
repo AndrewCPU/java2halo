@@ -6,6 +6,6 @@ import net.andrewcpu.halo.type.ObjectType;
 
 public class ObjectReferenceVariable extends DataNode {
 	public ObjectReferenceVariable() {
-		super("Object Reference Variable", new DataType[]{new ObjectType("value")}, new DataType[]{new ObjectType("value")});
+		super("Object Reference Variable.json", new DataType[]{new ObjectType("value")}, new DataType[]{new ObjectType("value")});
 	}
 }

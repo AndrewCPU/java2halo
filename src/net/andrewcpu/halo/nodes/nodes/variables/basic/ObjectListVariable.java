@@ -7,6 +7,6 @@ import net.andrewcpu.halo.type.ObjectsType;
 
 public class ObjectListVariable extends DataNode {
 	public ObjectListVariable() {
-		super("Object List Variable", new DataType[]{new ObjectType("a"), new ObjectType("b"), new ObjectType("c"), new ObjectType("d")}, new DataType[]{new ObjectsType("objectList")});
+		super("Object List Variable.json", new DataType[]{new ObjectType("a"), new ObjectType("b"), new ObjectType("c"), new ObjectType("d")}, new DataType[]{new ObjectsType("objectList")});
 	}
 }

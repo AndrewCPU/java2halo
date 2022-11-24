@@ -4,6 +4,6 @@ import net.andrewcpu.halo.type.ObjectType;
 
 public class SetObjectVariable extends IVSONode<ObjectType>{
 	public SetObjectVariable() {
-		super("Set Object Variable", new ObjectType("value"));
+		super("Set Object Variable.json", new ObjectType("value"));
 	}
 }

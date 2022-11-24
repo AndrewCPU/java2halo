@@ -1,0 +1,32 @@
+{
+  "equal": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "VehicleTypeType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "VehicleTypeType"
+        },
+        {
+          "_ref": "$1",
+          "type": "VehicleTypeType"
+        }
+      ],
+      "type": "CompareVehicleTypes",
+      "value": "$2"
+    },
+    "returnType": "BooleanType"
+  },
+  "constants": ["banshee","brute_chopper","chopper_boss","ghost","gungoose","mongoose","razorback","rocket_hog","scorpion","warthog","wasp","wraith"]
+}

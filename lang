@@ -1,114 +1,17 @@
+global lastKiller: Player;
 @PlayerKilledEvent(killed, killer, deathContext) {
-    if(killed.getTeam() == killer.getTeam()) {
-        killed.print();
-    }
-    else{
-        killed.blockRespawns();
-        killed.setTeam(killer.getTeam());
-    }
-}
-
-
-{
-"nodes": [
-    {
-        "type": "event",
-        "event_type": "OnPlayerKilled",
-        "execution_flow_id": 0,
-        "input": [],
-        "output": [
-            {
-                "type": "Player",
-                "name": "Killed Player",
-                "identifier": "32F22a"
-            },
-            {
-                "type": "Player",
-                "name": "Killing Player",
-                "identifier": "E9WKks2kS"
-            },
-            {
-                "type": "DeathContext",
-                "name": "Death Context",
-                "identifier": "098sSSA"
-            }
-        ],
-        "next": [
-            {
-                "type": "Branch",
-                "name": "Branch",
-                "condition": {
-                    "type": "CompareTeams",
-                    "name": "Compare Teams",
-                    "team1": {
-                        "type": "GetPlayerTeam",
-                        "player": "$$32F22a$$"
-                    },
-                    "team2": {
-                        "type": "GetPlayerTeam",
-                        "player": "$$E9WKks2kS$$"
-                    }
-                },
-                "ifTrue": {
-                    "type": "PrintPlayer",
-                    "value": "$$32F22a$$",
-                },
-                "ifFalse": {
-                    "type": "BlockPlayerRespawns",
-                    "player": "$$32F22a$$",
-                    "respawnMessage": null,
-                    "next": {
-                        "type": "SetPlayerTeam",
-                        "name": "Set Player Team",
-                        "player": "$$32F22a$$",
-                        "team": {
-                            "type": "GetPlayerTeam",
-                            "player": "$$E9WKks2kS$$",
-                        }
-                    }
-                }
-            }
-        ]
-        "input_count": 0,
-        "output_count": 3
-    }
-]
-}
-{
-    "Player": {
-        "_ref": "$$1",
-        "getTeam": {
-            "inputs": [],
-            "output": "Team",
-            "resultReference": "$$2",
-            "flow": null,
-            "node_tree": {
-                "type": "GetPlayerTeam",
-                "input": ["$$1"],
-                "resultReference": "$$2",
-                "output": [
-                    {
-                        "type": "Team",
-                        "_ref": "$$2"
-                    }
-                ]
-            }
-        },
-        "setTeam": {
-            "inputs": [
-                {
-                    "type": "Team",
-                    "_ref": "$$2"
-                }
-            ],
-            "output": null,
-            "flow": "$$4",
-            "node_tree": {
-                "type": "SetPlayerTeam",
-                "input": ["$$1", "$$2"],
-                "resultReference": "$$3",
-                "output_flow": "$$4",
+    if(killer.getTeam() == Team.cobra) {
+        if(killed.getTeam() == Team.eagle) {
+            killed.setTeam(Team.cobra);
+            foreach((player, it) in killer.getTeam().getPlayers()) {
+                player.print();
             }
         }
+        else {
+            killed.print();
+        }
+    }
+    else {
+        killed.print();
     }
 }

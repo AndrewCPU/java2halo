@@ -7,6 +7,6 @@ import net.andrewcpu.halo.type.StringType;
 
 public class IdentifierVariable extends DataNode {
 	public IdentifierVariable() {
-		super("Identifier Variable", new DataType[]{new StringType("value")}, new DataType[]{new IdentifierType("identifier")});
+		super("Identifier Variable.json", new DataType[]{new StringType("value")}, new DataType[]{new IdentifierType("identifier")});
 	}
 }

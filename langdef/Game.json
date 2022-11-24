@@ -1,0 +1,317 @@
+{
+  "statics": {
+    "endRoundAllLose": {
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "mapping": {
+        "output": [],
+        "input": [
+          {
+            "_ref": "$1",
+            "type": "BooleanType"
+          }
+        ],
+        "type": "EndRoundAllLose"
+      },
+      "returnType": "void"
+    },
+    "setPointsToWin": {
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "mapping": {
+        "output": [],
+        "input": [
+          {
+            "_ref": "$1",
+            "type": "NumberType"
+          }
+        ],
+        "type": "SetPointsToWin"
+      },
+      "returnType": "void"
+    },
+    "getRoundTime": {
+      "input": [],
+      "mapping": {
+        "output": [
+          {
+            "_ref": "$1",
+            "type": "NumberType"
+          }
+        ],
+        "input": [],
+        "type": "GetRoundTime",
+        "value": "$1"
+      },
+      "returnType": "NumberType"
+    },
+    "getCurrentRound": {
+      "input": [],
+      "mapping": {
+        "output": [
+          {
+            "_ref": "$1",
+            "type": "NumberType"
+          }
+        ],
+        "input": [],
+        "type": "GetCurrentRound",
+        "value": "$1"
+      },
+      "returnType": "NumberType"
+    },
+    "removeBot": {
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "BotPlayerType"
+        }
+      ],
+      "mapping": {
+        "output": [],
+        "input": [
+          {
+            "_ref": "$1",
+            "type": "BotPlayerType"
+          }
+        ],
+        "type": "RemoveSpecificBot"
+      },
+      "returnType": "void"
+    },
+    "setRoundTime": {
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "mapping": {
+        "output": [],
+        "input": [
+          {
+            "_ref": "$1",
+            "type": "NumberType"
+          }
+        ],
+        "type": "SetRoundTime"
+      },
+      "returnType": "void"
+    },
+    "spawnObject": {
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "ObjectType"
+        }
+      ],
+      "mapping": {
+        "output": [],
+        "input": [
+          {
+            "_ref": "$1",
+            "type": "ObjectType"
+          }
+        ],
+        "type": "SpawnObject"
+      },
+      "returnType": "void"
+    },
+    "removeAllBots": {
+      "input": [],
+      "mapping": {
+        "output": [],
+        "input": [],
+        "type": "RemoveAllBots"
+      },
+      "returnType": "void"
+    },
+    "addBot": {
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "BotDifficultyType"
+        },
+        {
+          "_ref": "$2",
+          "type": "TeamType"
+        }
+      ],
+      "mapping": {
+        "output": [],
+        "input": [
+          {
+            "_ref": "$1",
+            "type": "BotDifficultyType"
+          },
+          {
+            "_ref": "$2",
+            "type": "TeamType"
+          }
+        ],
+        "type": "AddBot"
+      },
+      "returnType": "void"
+    },
+    "endRound": {
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "mapping": {
+        "output": [],
+        "input": [
+          {
+            "_ref": "$1",
+            "type": "BooleanType"
+          }
+        ],
+        "type": "EndRound"
+      },
+      "returnType": "void"
+    },
+    "endRoundAllTie": {
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "mapping": {
+        "output": [],
+        "input": [
+          {
+            "_ref": "$1",
+            "type": "BooleanType"
+          }
+        ],
+        "type": "EndRoundAllTie"
+      },
+      "returnType": "void"
+    },
+    "getRandomPlayer": {
+      "input": [],
+      "mapping": {
+        "output": [
+          {
+            "_ref": "$1",
+            "type": "PlayerType"
+          }
+        ],
+        "input": [],
+        "type": "GetRandomPlayer",
+        "value": "$1"
+      },
+      "returnType": "PlayerType"
+    },
+    "endRoundWithWinningPlayer": {
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "mapping": {
+        "output": [],
+        "input": [
+          {
+            "_ref": "$1",
+            "type": "PlayerType"
+          },
+          {
+            "_ref": "$2",
+            "type": "BooleanType"
+          }
+        ],
+        "type": "EndRoundWinningPlayer"
+      },
+      "returnType": "void"
+    },
+    "getAllPlayers": {
+      "input": [],
+      "mapping": {
+        "output": [
+          {
+            "_ref": "$1",
+            "type": "PlayersType"
+          }
+        ],
+        "input": [],
+        "type": "GetAllPlayers",
+        "value": "$1"
+      },
+      "returnType": "PlayersType"
+    },
+    "endRoundWithWinningTeam": {
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "TeamType"
+        },
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "mapping": {
+        "output": [],
+        "input": [
+          {
+            "_ref": "$1",
+            "type": "TeamType"
+          },
+          {
+            "_ref": "$2",
+            "type": "BooleanType"
+          }
+        ],
+        "type": "EndRoundWinningTeam"
+      },
+      "returnType": "void"
+    },
+    "getPointsToWin": {
+      "input": [],
+      "mapping": {
+        "output": [
+          {
+            "_ref": "$1",
+            "type": "NumberType"
+          }
+        ],
+        "input": [],
+        "type": "GetPointsToWin",
+        "value": "$1"
+      },
+      "returnType": "NumberType"
+    },
+    "getMaxRounds": {
+      "input": [],
+      "mapping": {
+        "output": [
+          {
+            "_ref": "$1",
+            "type": "NumberType"
+          }
+        ],
+        "input": [],
+        "type": "GetMaxRounds",
+        "value": "$1"
+      },
+      "returnType": "NumberType"
+    }
+  }
+}

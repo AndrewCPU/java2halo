@@ -1,0 +1,28 @@
+{
+  "constants": [
+    "ease_in_circular",
+    "ease_in_cubic",
+    "ease_in_exponential",
+    "ease_in_quadratic",
+    "ease_in_quartic",
+    "ease_in_quintic",
+    "ease_in_sine",
+    "ease_in_out_circular",
+    "ease_in_out_cubic",
+    "ease_in_out_exponential",
+    "ease_in_out_quadratic",
+    "ease_in_out_quartic",
+    "ease_in_out_quintic",
+    "ease_in_out_sine",
+    "ease_out_circular",
+    "ease_out_cubic",
+    "ease_out_exponential",
+    "ease_out_quadratic",
+    "ease_out_quartic",
+    "ease_out_quintic",
+    "ease_out_sine",
+    "linear",
+    "one",
+    "zero"
+  ]
+}

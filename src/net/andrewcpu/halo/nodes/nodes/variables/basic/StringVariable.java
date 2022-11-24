@@ -6,6 +6,6 @@ import net.andrewcpu.halo.type.StringType;
 
 public class StringVariable extends DataNode {
 	public StringVariable() {
-		super("String Variable", new DataType[]{new StringType("value")}, new DataType[]{new StringType("value")});
+		super("String Variable.json", new DataType[]{new StringType("value")}, new DataType[]{new StringType("value")});
 	}
 }

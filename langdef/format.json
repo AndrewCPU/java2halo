@@ -1,0 +1,242 @@
+{
+  "nodes": [
+    {
+      "nodes": []
+    },
+    {
+      "nodes": [
+        {
+          "input": [
+            {
+              "type": "IdentifierType",
+              "value": "lastKiller"
+            },
+            null,
+            {
+              "constant": "global",
+              "type": "ScopeType"
+            }
+          ],
+          "type": "DeclareObjectVariable"
+        },
+        {
+          "output": [
+            {
+              "_ref": "26187ab3-1729-4f97-9ff9-0a8ac140a0e5",
+              "name": "killed",
+              "type": "PlayerType"
+            },
+            {
+              "_ref": "81633e83-1077-4295-895d-6796791f346b",
+              "name": "killer",
+              "type": "PlayerType"
+            },
+            {
+              "_ref": "ab264413-43e7-4af3-be38-87366e7b2e44",
+              "name": "deathContext",
+              "type": "DeathContextType"
+            }
+          ],
+          "next": {
+            "output": [
+              {
+                "output": [
+                  {
+                    "next": {
+                      "output": [
+                        {},
+                        {
+                          "next": null,
+                          "output": [],
+                          "input": [
+                            {
+                              "_ref": "0e149102-cfa7-4c87-9f57-7b1cec9b7e25",
+                              "name": "player",
+                              "type": "PlayerType"
+                            }
+                          ],
+                          "type": "PrintPlayerToKillfeed"
+                        },
+                        {
+                          "_ref": "0e149102-cfa7-4c87-9f57-7b1cec9b7e25",
+                          "name": "player",
+                          "type": "PlayerType"
+                        },
+                        {
+                          "_ref": "5dfd4fb2-2cdd-4857-9748-df9c4e26d225",
+                          "name": "it",
+                          "type": "NumberType"
+                        }
+                      ],
+                      "input": [
+                        {
+                          "output": [
+                            {
+                              "_ref": "f230aab6-e914-4239-86f7-c0b7e3f6b040",
+                              "name": "players",
+                              "type": "PlayersType"
+                            }
+                          ],
+                          "input": [
+                            {
+                              "output": [
+                                {
+                                  "_ref": "80114c4d-3641-43c5-8862-88a27e755892",
+                                  "name": "team",
+                                  "type": "TeamType"
+                                }
+                              ],
+                              "input": [
+                                {
+                                  "_ref": "81633e83-1077-4295-895d-6796791f346b",
+                                  "name": "killer",
+                                  "type": "PlayerType"
+                                }
+                              ],
+                              "outputValueName": "team",
+                              "type": "GetPlayerTeam",
+                              "value": "80114c4d-3641-43c5-8862-88a27e755892",
+                              "returnType": "TeamType"
+                            }
+                          ],
+                          "outputValueName": "players",
+                          "type": "GetAllPlayersOnTeam",
+                          "value": "f230aab6-e914-4239-86f7-c0b7e3f6b040",
+                          "returnType": "PlayersType"
+                        }
+                      ],
+                      "type": "ForEachPlayer"
+                    },
+                    "output": [],
+                    "input": [
+                      {
+                        "_ref": "26187ab3-1729-4f97-9ff9-0a8ac140a0e5",
+                        "name": "killed",
+                        "type": "PlayerType"
+                      },
+                      {
+                        "type": "Team",
+                        "value": "cobra"
+                      }
+                    ],
+                    "type": "SetPlayerTeam"
+                  },
+                  {
+                    "next": null,
+                    "output": [],
+                    "input": [
+                      {
+                        "_ref": "26187ab3-1729-4f97-9ff9-0a8ac140a0e5",
+                        "name": "killed",
+                        "type": "PlayerType"
+                      }
+                    ],
+                    "type": "PrintPlayerToKillfeed"
+                  }
+                ],
+                "input": [
+                  {
+                    "output": [
+                      {
+                        "_ref": "4ab87470-300b-4169-a1e9-2e28f9898152",
+                        "name": "equal",
+                        "type": "BooleanType"
+                      }
+                    ],
+                    "input": [
+                      {
+                        "output": [
+                          {
+                            "_ref": "49ecf461-078f-43fd-9943-e36bba88f147",
+                            "name": "team",
+                            "type": "TeamType"
+                          }
+                        ],
+                        "input": [
+                          {
+                            "_ref": "26187ab3-1729-4f97-9ff9-0a8ac140a0e5",
+                            "name": "killed",
+                            "type": "PlayerType"
+                          }
+                        ],
+                        "outputValueName": "team",
+                        "type": "GetPlayerTeam",
+                        "value": "49ecf461-078f-43fd-9943-e36bba88f147",
+                        "returnType": "TeamType"
+                      },
+                      {
+                        "type": "Team",
+                        "value": "eagle"
+                      }
+                    ],
+                    "outputValueName": "equal",
+                    "type": "CompareTeams",
+                    "value": "4ab87470-300b-4169-a1e9-2e28f9898152",
+                    "returnType": "BooleanType"
+                  }
+                ],
+                "type": "Branch"
+              },
+              {
+                "next": null,
+                "output": [],
+                "input": [
+                  {
+                    "_ref": "26187ab3-1729-4f97-9ff9-0a8ac140a0e5",
+                    "name": "killed",
+                    "type": "PlayerType"
+                  }
+                ],
+                "type": "PrintPlayerToKillfeed"
+              }
+            ],
+            "input": [
+              {
+                "output": [
+                  {
+                    "_ref": "c6656286-38af-4b6c-9f70-fc4156727589",
+                    "name": "equal",
+                    "type": "BooleanType"
+                  }
+                ],
+                "input": [
+                  {
+                    "output": [
+                      {
+                        "_ref": "c4575b44-3331-403c-a124-05f595806667",
+                        "name": "team",
+                        "type": "TeamType"
+                      }
+                    ],
+                    "input": [
+                      {
+                        "_ref": "81633e83-1077-4295-895d-6796791f346b",
+                        "name": "killer",
+                        "type": "PlayerType"
+                      }
+                    ],
+                    "outputValueName": "team",
+                    "type": "GetPlayerTeam",
+                    "value": "c4575b44-3331-403c-a124-05f595806667",
+                    "returnType": "TeamType"
+                  },
+                  {
+                    "type": "Team",
+                    "value": "cobra"
+                  }
+                ],
+                "outputValueName": "equal",
+                "type": "CompareTeams",
+                "value": "c6656286-38af-4b6c-9f70-fc4156727589",
+                "returnType": "BooleanType"
+              }
+            ],
+            "type": "Branch"
+          },
+          "input": [],
+          "type": "PlayerKilledEvent"
+        }
+      ]
+    }
+  ]
+}

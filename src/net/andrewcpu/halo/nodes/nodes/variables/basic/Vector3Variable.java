@@ -7,6 +7,6 @@ import net.andrewcpu.halo.type.VectorType;
 
 public class Vector3Variable extends DataNode {
 	public Vector3Variable() {
-		super("Vector3 Variable", new DataType[]{new NumberType("x"), new NumberType("y"), new NumberType("z")}, new DataType[]{new VectorType("vector")});
+		super("Vector3 Variable.json", new DataType[]{new NumberType("x"), new NumberType("y"), new NumberType("z")}, new DataType[]{new VectorType("vector")});
 	}
 }

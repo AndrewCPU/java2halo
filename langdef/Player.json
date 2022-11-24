@@ -1,0 +1,1663 @@
+{
+  "isDrivingVehicle": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetIsDrivingVehicle",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  },
+  "isGrappling": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetIsGrappling",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  },
+  "isBoardingVehicle": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetIsBoarding",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  },
+  "setRespawnPenalty": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "NumberType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "type": "SetRespawnPenalty"
+    },
+    "returnType": "void"
+  },
+  "setWeaponLowered": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "BooleanType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "type": "SetPlayerWeaponLowered"
+    },
+    "returnType": "void"
+  },
+  "getAllegiance": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "TeamType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetPlayerFFAAllegiance",
+      "value": "$1"
+    },
+    "returnType": "TeamType"
+  },
+  "removeAllTraitSet": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "BooleanType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "type": "RemoveAllTraitSets"
+    },
+    "returnType": "void"
+  },
+  "setTeam": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "TeamType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "TeamType"
+        }
+      ],
+      "type": "SetPlayerTeam"
+    },
+    "returnType": "void"
+  },
+  "isInVehicle": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetIsInVehicle",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  },
+  "removeTraitSet": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "IdentifierType"
+      },
+      {
+        "_ref": "$2",
+        "type": "BooleanType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "IdentifierType"
+        },
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "type": "RemoveTraitSet"
+    },
+    "returnType": "void"
+  },
+  "refillAmmo": {
+    "input": [],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "RefillPlayerAmmo"
+    },
+    "returnType": "void"
+  },
+  "getEquippedWeapon": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "WeaponType"
+        },
+        {
+          "_ref": "$2",
+          "type": "WeaponType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetPlayerWeapons",
+      "value": "$1"
+    },
+    "returnType": "WeaponType"
+  },
+  "getUnequippedWeapon": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "WeaponType"
+        },
+        {
+          "_ref": "$2",
+          "type": "WeaponType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetPlayerWeapons",
+      "value": "$2"
+    },
+    "returnType": "WeaponType"
+  },
+  "isDetectedByTeam": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "TeamType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "TeamType"
+        }
+      ],
+      "type": "GetIsDetectedByTeam",
+      "value": "$2"
+    },
+    "returnType": "BooleanType"
+  },
+  "getPlayerPoints": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        },
+        {
+          "_ref": "$2",
+          "type": "NumberType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetPlayerPoints",
+      "value": "$2"
+    },
+    "returnType": "NumberType"
+  },
+  "unblockRespawns": {
+    "input": [],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "UnblockRespawnsForPlayer"
+    },
+    "returnType": "void"
+  },
+  "createUIMessage": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "UIMessageTemplateType"
+      },
+      {
+        "_ref": "$2",
+        "type": "StringType"
+      },
+      {
+        "_ref": "$3",
+        "type": "StringType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$4",
+          "type": "UIMessageType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "UIMessageTemplateType"
+        },
+        {
+          "_ref": "$2",
+          "type": "StringType"
+        },
+        {
+          "_ref": "$3",
+          "type": "StringType"
+        },
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "CreateUIMessage",
+      "value": "$4"
+    },
+    "returnType": "UIMessageType"
+  },
+  "applyTraitSetUntilDeath": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "IdentifierType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "IdentifierType"
+        },
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "ApplyTraitSetUntilDeath"
+    },
+    "returnType": "void"
+  },
+  "isMarkOverridden": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetIsMarkOverridden",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  },
+  "isHoldingAnyEquipment": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$3",
+          "type": "EquipmentTypeType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetIsHoldingAnyEquipment",
+      "value": "$3"
+    },
+    "returnType": "BooleanType"
+  },
+  "blockRespawns": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "RespawnMessageType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "RespawnMessageType"
+        }
+      ],
+      "type": "BlockPlayerRespawns"
+    },
+    "returnType": "void"
+  },
+  "setObjectiveBanner": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "BooleanType"
+      },
+      {
+        "_ref": "$2",
+        "type": "UIMessageType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$2",
+          "type": "UIMessageType"
+        }
+      ],
+      "type": "SetObjectiveBannerForPlayer"
+    },
+    "returnType": "void"
+  },
+  "getPersonalScore": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        },
+        {
+          "_ref": "$2",
+          "type": "NumberType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetPersonalScore",
+      "value": "$2"
+    },
+    "returnType": "NumberType"
+  },
+  "applyTraitSet": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "IdentifierType"
+      },
+      {
+        "_ref": "$2",
+        "type": "BooleanType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "IdentifierType"
+        },
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "type": "ApplyTraitSet"
+    },
+    "returnType": "void"
+  },
+  "setAllegiance": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "TeamType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "TeamType"
+        }
+      ],
+      "type": "SetPlayerFFAAllegiance"
+    },
+    "returnType": "void"
+  },
+  "applyTraitSetForSeconds": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "IdentifierType"
+      },
+      {
+        "_ref": "$2",
+        "type": "NumberType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "IdentifierType"
+        },
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$2",
+          "type": "NumberType"
+        }
+      ],
+      "type": "ApplyTraitSetForSeconds"
+    },
+    "returnType": "void"
+  },
+  "emptyEquipment": {
+    "input": [],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "EmptyPlayerEquipment"
+    },
+    "returnType": "void"
+  },
+  "pushSplash": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "NumberType"
+      },
+      {
+        "_ref": "$2",
+        "type": "UIMessageType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        },
+        {
+          "_ref": "$2",
+          "type": "UIMessageType"
+        }
+      ],
+      "type": "PushSplashToPlayer"
+    },
+    "returnType": "void"
+  },
+  "emptyGrenades": {
+    "input": [],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "EmptyPlayerGrenades"
+    },
+    "returnType": "void"
+  },
+  "isCrouching": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetIsCrouching",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  },
+  "getVehicle": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "VehicleType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetPlayerVehicle",
+      "value": "$1"
+    },
+    "returnType": "VehicleType"
+  },
+  "teleport": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "VectorType"
+      },
+      {
+        "_ref": "$2",
+        "type": "BooleanType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "VectorType"
+        },
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "type": "TeleportPlayer"
+    },
+    "returnType": "void"
+  },
+  "setCamo": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "NumberType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "type": "SetPlayerCamo"
+    },
+    "returnType": "void"
+  },
+  "adjustPersonalScore": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "NumberType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "type": "AdjustPersonalScore"
+    },
+    "returnType": "void"
+  },
+  "setEquipmentCharges": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "NumberType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "type": "SetPlayerEquipmentCharges"
+    },
+    "returnType": "void"
+  },
+  "adjustGrenades": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "GrenadeTypeType"
+      },
+      {
+        "_ref": "$2",
+        "type": "NumberType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "GrenadeTypeType"
+        },
+        {
+          "_ref": "$2",
+          "type": "NumberType"
+        }
+      ],
+      "type": "AdjustPlayerGrenades"
+    },
+    "returnType": "void"
+  },
+  "refillGrenades": {
+    "input": [],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "RefillDefaultGrenades"
+    },
+    "returnType": "void"
+  },
+  "isCamouflaged": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetIsCamouflaged",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  },
+  "isZoomed": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetIsZoomed",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  },
+  "clearSplash": {
+    "input": [],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "ClearSplashForPlayer"
+    },
+    "returnType": "void"
+  },
+  "giveWeaponType": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "WeaponTypeType"
+      },
+      {
+        "_ref": "$2",
+        "type": "WeaponAdditionMethodType"
+      },
+      {
+        "_ref": "$3",
+        "type": "BooleanType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "WeaponTypeType"
+        },
+        {
+          "_ref": "$2",
+          "type": "WeaponAdditionMethodType"
+        },
+        {
+          "_ref": "$3",
+          "type": "BooleanType"
+        }
+      ],
+      "type": "GivePlayerNewWeapon"
+    },
+    "returnType": "void"
+  },
+  "dropWeapon": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "WeaponType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "WeaponType"
+        }
+      ],
+      "type": "DropSpecificWeapon"
+    },
+    "returnType": "void"
+  },
+  "isHoldingWeaponType": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "WeaponTypeType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "WeaponTypeType"
+        }
+      ],
+      "type": "GetIsHoldingWeaponType",
+      "value": "$2"
+    },
+    "returnType": "BooleanType"
+  },
+  "getTeam": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "TeamType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetPlayerTeam",
+      "value": "$1"
+    },
+    "returnType": "TeamType"
+  },
+  "isHoldingEquipmentType": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "EquipmentTypeType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "EquipmentTypeType"
+        }
+      ],
+      "type": "GetIsHoldingEquipmentType",
+      "value": "$2"
+    },
+    "returnType": "BooleanType"
+  },
+  "adjustEquipmentCharges": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "NumberType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "type": "AdjustPlayerEquipmentCharges"
+    },
+    "returnType": "void"
+  },
+  "getAimingVector": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "VectorType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetPlayerAimingVector",
+      "value": "$1"
+    },
+    "returnType": "VectorType"
+  },
+  "isLunging": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetIsLunging",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  },
+  "getRespawnPenalty": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetRespawnPenalty",
+      "value": "$1"
+    },
+    "returnType": "NumberType"
+  },
+  "isAirborne": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetIsAirborne",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  },
+  "refillUnequippedAmmoByPercentage": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "NumberType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "type": "AddPlayerAmmoUnequipped"
+    },
+    "returnType": "void"
+  },
+  "isHoldingWeapon": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "WeaponType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "WeaponType"
+        }
+      ],
+      "type": "GetIsHoldingSpecificWeapon",
+      "value": "$2"
+    },
+    "returnType": "BooleanType"
+  },
+  "getEquipmentCharges": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetPlayerEquipmentCharges",
+      "value": "$1"
+    },
+    "returnType": "NumberType"
+  },
+  "isOvershieldOn": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetIsOvershieldOn",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  },
+  "emptyAmmo": {
+    "input": [],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "EmptyPlayerAmmo"
+    },
+    "returnType": "void"
+  },
+  "giveEquipment": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "EquipmentTypeType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "EquipmentTypeType"
+        }
+      ],
+      "type": "GivePlayerNewEquipment"
+    },
+    "returnType": "void"
+  },
+  "adjustPoints": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "NumberType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "type": "AdjustPlayerPoints"
+    },
+    "returnType": "void"
+  },
+  "print": {
+    "input": [],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "PrintPlayerToKillfeed"
+    },
+    "returnType": "void"
+  },
+  "getGrenadeCount": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "GrenadeTypeType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "NumberType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "GrenadeTypeType"
+        }
+      ],
+      "type": "GetPlayerGrenadeCount",
+      "value": "$2"
+    },
+    "returnType": "NumberType"
+  },
+  "refillEquippedAmmoByPercentage": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "NumberType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "type": "AddPlayerAmmoEquipped"
+    },
+    "returnType": "void"
+  },
+  "dropWeaponType": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "WeaponTypeType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "WeaponTypeType"
+        }
+      ],
+      "type": "DropWeaponOfType"
+    },
+    "returnType": "void"
+  },
+  "getLoadoutGrenadeCount": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "GrenadeTypeType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "NumberType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "GrenadeTypeType"
+        }
+      ],
+      "type": "GetLoadoutGrenadeCount",
+      "value": "$2"
+    },
+    "returnType": "NumberType"
+  },
+  "switchToWeaponType": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "WeaponTypeType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "WeaponTypeType"
+        }
+      ],
+      "type": "SwitchToFirstWeaponOfType"
+    },
+    "returnType": "void"
+  },
+  "equals": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "PlayerType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "AreSamePlayer",
+      "value": "$2"
+    },
+    "returnType": "BooleanType"
+  },
+  "createUIMessageB": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "UIMessageTemplateType"
+      },
+      {
+        "_ref": "$2",
+        "type": "StringType"
+      },
+      {
+        "_ref": "$3",
+        "type": "StringType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$4",
+          "type": "UIMessageType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$1",
+          "type": "UIMessageTemplateType"
+        },
+        {
+          "_ref": "$2",
+          "type": "StringType"
+        },
+        {
+          "_ref": "$3",
+          "type": "StringType"
+        },
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "CreateUIMessageB",
+      "value": "$4"
+    },
+    "returnType": "UIMessageType"
+  },
+  "setMarkOverride": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "BooleanType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "type": "SetPlayerMarkOverride"
+    },
+    "returnType": "void"
+  },
+  "giveWeapon": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "WeaponType"
+      },
+      {
+        "_ref": "$2",
+        "type": "WeaponAdditionMethodType"
+      },
+      {
+        "_ref": "$3",
+        "type": "BooleanType"
+      }
+    ],
+    "mapping": {
+      "output": [],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        },
+        {
+          "_ref": "$1",
+          "type": "WeaponType"
+        },
+        {
+          "_ref": "$2",
+          "type": "WeaponAdditionMethodType"
+        },
+        {
+          "_ref": "$3",
+          "type": "BooleanType"
+        }
+      ],
+      "type": "GivePlayerSpecificWeapon"
+    },
+    "returnType": "void"
+  },
+  "isDetected": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetIsDetected",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  },
+  "isGunnerInVehicle": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetIsGunnerInVehicle",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  },
+  "isInKnockback": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "PlayerType"
+        }
+      ],
+      "type": "GetIsInKnockback",
+      "value": "$1"
+    },
+    "returnType": "BooleanType"
+  }
+}

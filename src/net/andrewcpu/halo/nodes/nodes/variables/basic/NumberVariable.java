@@ -6,6 +6,6 @@ import net.andrewcpu.halo.type.NumberType;
 
 public class NumberVariable extends DataNode {
 	public NumberVariable() {
-		super("Number Variable", new DataType[]{new NumberType("value")}, new DataType[]{new NumberType("value")});
+		super("Number Variable.json", new DataType[]{new NumberType("value")}, new DataType[]{new NumberType("value")});
 	}
 }

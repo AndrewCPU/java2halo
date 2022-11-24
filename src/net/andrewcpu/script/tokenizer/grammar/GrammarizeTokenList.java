@@ -67,7 +67,8 @@ public class GrammarizeTokenList {
 		for (Object o : output) {
 			stack.push((List) o);
 		}
-		printStack(stack);
+		stack.print();
+//		printStack(stack);
 		return output;
 	}
 
@@ -193,14 +194,35 @@ public class GrammarizeTokenList {
 			}
 		}
 		for(int i = 0; i<output.size(); i++){
+			if(i + 3 <= output.size() - 1) {
+				if(output.get(i) instanceof Token token && token.getType() == TokenType.NAME) {
+					if(output.get(i + 1) instanceof Token equality && equality.getType() == TokenType.ASSIGNMENT_OPERATOR) {
+						if(output.get(i + 3) instanceof Token end && end.getType() == TokenType.STATEMENT_END) {
+							ValueAssignmentStructure valueAssignmentStructure = new ValueAssignmentStructure(token, output.get(i + 2));
+							output.remove( i + 3);
+							output.remove( i + 2);
+							output.remove(i + 1);
+							output.remove(i);
+							output.add(i, valueAssignmentStructure);
+						}
+					}
+				}
+			}
 			if(i + 4 <= output.size() - 1){
 				if(output.get(i) instanceof Token token && token.getType() == TokenType.GLOBAL_DECLARATION || output.get(i) instanceof Token token2 && token2.getType() == TokenType.LOCAL_DECLARATION){
 					Token scope = (Token) output.get(i);
 					if(output.get(i + 1) instanceof Token nameToken && nameToken.getType() == TokenType.NAME){
 						Token name = (Token) output.get(i + 1);
 						if(output.get(i + 2) instanceof Token valueAssign &&  valueAssign.getType() == TokenType.VALUE_ASSIGNMENT) {
+							boolean typed = output.get(i + 3) instanceof Token token && token.getType() == TokenType.TYPE;
 							if(output.get(i + 4) instanceof Token endStatement && endStatement.getType() == TokenType.STATEMENT_END) {
-								VariableDeclarationStructure variableDeclarationStructure = new VariableDeclarationStructure(scope, name, output.get(i + 3));
+								Object  variableDeclarationStructure;
+								if(typed) {
+									variableDeclarationStructure = new TypedVariableDeclarationStructure(scope, name, (Token)output.get(i + 3));
+								}
+								else{
+									variableDeclarationStructure = new VariableDeclarationStructure(scope, name, output.get(i + 3));
+								}
 								output.remove(i + 4);
 								output.remove( i + 3);
 								output.remove( i + 2);
@@ -242,7 +264,33 @@ public class GrammarizeTokenList {
 					}
 				}
 			}
+			if(i - 1 >= 0 && i + 1 <= output.size() - 1){
+				if(output.get(i) instanceof Token token){
+					if(token.getType() == TokenType.BOOLEAN_OPERATOR) {
+						BooleanEqualityStructure booleanEqualityStructure = new BooleanEqualityStructure(token, output.get(i - 1), output.get(i + 1));
+						output.remove(i + 1);
+						output.remove(i);
+						output.remove(i - 1);
+						output.add(i-1, booleanEqualityStructure);
+						i--;
+					}
+				}
+			}
+		}
 
+		for(int i = 0; i<output.size(); i++) {
+			if(i - 1 >= 0 && i + 1 <= output.size() - 1){
+				if(output.get(i) instanceof Token token){
+					if(token.getType() == TokenType.BOOLEAN_COMPARISON) {
+						BooleanComparisonStructure booleanEqualityStructure = new BooleanComparisonStructure(token, output.get(i - 1), output.get(i + 1));
+						output.remove(i + 1);
+						output.remove(i);
+						output.remove(i - 1);
+						output.add(i-1, booleanEqualityStructure);
+						i--;
+					}
+				}
+			}
 		}
 
 		if(changeMade) return recursiveReplacement2(output);

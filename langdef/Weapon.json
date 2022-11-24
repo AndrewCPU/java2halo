@@ -1,0 +1,132 @@
+{
+  "areSameType": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "WeaponType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$3",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "WeaponType"
+        },
+        {
+          "_ref": "$1",
+          "type": "WeaponType"
+        }
+      ],
+      "type": "AreSameWeaponType",
+      "value": "$3"
+    },
+    "returnType": "BooleanType"
+  },
+  "getType": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "WeaponTypeType"
+        },
+        {
+          "_ref": "$2",
+          "type": "WeaponTypeType"
+        },
+        {
+          "_ref": "$3",
+          "type": "WeaponConfigurationType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "WeaponType"
+        }
+      ],
+      "type": "GetWeaponType",
+      "value": "$3"
+    },
+    "returnType": "WeaponTypeType"
+  },
+  "getMagazineCapacity": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "WeaponType"
+        }
+      ],
+      "type": "GetWeaponMagazineCapacity",
+      "value": "$1"
+    },
+    "returnType": "NumberType"
+  },
+  "getMagazineRounds": {
+    "input": [],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$1",
+          "type": "NumberType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "WeaponType"
+        }
+      ],
+      "type": "GetWeaponMagazineRounds",
+      "value": "$1"
+    },
+    "returnType": "NumberType"
+  },
+  "isType": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "WeaponTypeType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "WeaponType"
+        },
+        {
+          "_ref": "$1",
+          "type": "WeaponTypeType"
+        }
+      ],
+      "type": "GetIsWeaponType",
+      "value": "$2"
+    },
+    "returnType": "BooleanType"
+  }
+}

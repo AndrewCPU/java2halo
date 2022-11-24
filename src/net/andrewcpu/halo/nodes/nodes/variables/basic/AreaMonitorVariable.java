@@ -7,6 +7,6 @@ import net.andrewcpu.halo.type.ObjectType;
 
 public class AreaMonitorVariable extends DataNode {
 	public AreaMonitorVariable() {
-		super("Area Monitor Variable", new DataType[]{new ObjectType("object")}, new DataType[]{new AreaMonitorType("areaMonitor")});
+		super("Area Monitor Variable.json", new DataType[]{new ObjectType("object")}, new DataType[]{new AreaMonitorType("areaMonitor")});
 	}
 }

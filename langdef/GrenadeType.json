@@ -1,0 +1,32 @@
+{
+  "equal": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "GrenadeTypeType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "GrenadeTypeType"
+        },
+        {
+          "_ref": "$1",
+          "type": "GrenadeTypeType"
+        }
+      ],
+      "type": "CompareGrenadeTypes",
+      "value": "$2"
+    },
+    "returnType": "BooleanType"
+  },
+  "constants": ["dynamo","fragmentation","plasma","spike"]
+}

@@ -6,6 +6,6 @@ import net.andrewcpu.halo.type.WeaponTypeType;
 
 public class WeaponTypeVariable extends DataNode {
 	public WeaponTypeVariable() {
-		super("Weapon Type Variable", new DataType[]{new WeaponTypeType("value")}, new DataType[]{new WeaponTypeType("value")});
+		super("Weapon Type Variable.json", new DataType[]{new WeaponTypeType("value")}, new DataType[]{new WeaponTypeType("value")});
 	}
 }

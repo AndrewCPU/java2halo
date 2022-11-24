@@ -1,0 +1,101 @@
+{
+  "equal": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "BooleanType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$3",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "type": "BooleanLogic",
+      "value": "$2"
+    },
+    "returnType": "BooleanType"
+  },
+  "and": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "BooleanType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$3",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "type": "BooleanLogic",
+      "value": "$2"
+    },
+    "returnType": "BooleanType"
+  },
+  "or": {
+    "input": [
+      {
+        "_ref": "$1",
+        "type": "BooleanType"
+      }
+    ],
+    "mapping": {
+      "output": [
+        {
+          "_ref": "$2",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$3",
+          "type": "BooleanType"
+        }
+      ],
+      "input": [
+        {
+          "_ref": "$0",
+          "type": "BooleanType"
+        },
+        {
+          "_ref": "$1",
+          "type": "BooleanType"
+        }
+      ],
+      "type": "BooleanLogic",
+      "value": "$3"
+    },
+    "returnType": "BooleanType"
+  }
+}

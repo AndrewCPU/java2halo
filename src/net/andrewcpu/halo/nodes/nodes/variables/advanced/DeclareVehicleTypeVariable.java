@@ -4,6 +4,6 @@ import net.andrewcpu.halo.type.VehicleTypeType;
 
 public class DeclareVehicleTypeVariable extends IISNode<VehicleTypeType> {
 	public DeclareVehicleTypeVariable() {
-		super("Declare Vehicle Type Variable ", new VehicleTypeType("initialValue"));
+		super("Declare Vehicle Type Variable.json ", new VehicleTypeType("initialValue"));
 	}
 }

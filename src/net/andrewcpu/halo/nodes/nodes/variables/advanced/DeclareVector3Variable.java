@@ -4,6 +4,6 @@ import net.andrewcpu.halo.type.VectorType;
 
 public class DeclareVector3Variable extends IISNode<VectorType> {
 	public DeclareVector3Variable() {
-		super("Declare Vector Variable ", new VectorType("initialValue"));
+		super("Declare Vector Variable.json ", new VectorType("initialValue"));
 	}
 }

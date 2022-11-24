@@ -4,6 +4,6 @@ import net.andrewcpu.halo.type.VehicleTypeType;
 
 public class GetVehicleTypeVariable extends ISONode<VehicleTypeType> {
 	public GetVehicleTypeVariable() {
-		super("Get Vehicle Type Variable", new VehicleTypeType("value"));
+		super("Get Vehicle Type Variable.json", new VehicleTypeType("value"));
 	}
 }
